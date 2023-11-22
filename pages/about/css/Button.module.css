@@ -1,0 +1,26 @@
+
+
+
+
+.card{
+    width: 500px;
+    height: 500px;
+    background: #000;
+    margin-top: 200px ;
+    margin-left: 200px;
+
+}
+
+.animation{
+ 
+ 
+    width: 600px;
+    height: 510px;
+    background: rgb(70, 58, 143);
+  
+    border: 8px solid var(#f13024);
+    filter: drop-shadow(0px 0px 50px crimson);
+    transform: rotate(75deg);
+
+
+}

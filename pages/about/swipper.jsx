@@ -1,20 +1,19 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Autoplay, Navigation, Pagination } from 'swiper';
-import 'swiper/swiper.min.css';
-import 'swiper/css/navigation';
-
-
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Autoplay, Navigation, Pagination } from "swiper";
+import "swiper/swiper.min.css";
+import "swiper/css/navigation";
+import logo from '../../public/scroll.png'
 SwiperCore.use([Autoplay, Navigation, Pagination]);
 
 const SwiperComponent = () => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
+        slidesPerView={2}
         autoplay={{
-          delay: 1,
-          disableOnInteraction: false,
+          delay: 4000,
+          disableOnInteraction: true,
         }}
         speed={3000}
         loop={true}
@@ -23,14 +22,133 @@ const SwiperComponent = () => {
         }}
         navigation={true}
       >
-      <SwiperSlide style={{backgroundColor: "red"}}>Slide 1</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "blue"}}>Slide 2</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "yellow"}}>Slide 3</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "pink"}}>Slide 4</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "red"}}>Slide 5</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "blue"}}>Slide 6</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "yellow"}}>Slide 7</SwiperSlide>
-      <SwiperSlide style={{backgroundColor: "pink"}}>Slide 8</SwiperSlide>
+        <SwiperSlide className="">
+        
+          <div className="max-w-sm rounded overflow-hidden shadow-lg ml-10 mr-10 mt-5">
+          <img src={logo} width="100" height="50" />
+            <div className="px-6 py-4">
+              <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+              <p className="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatibus quia, nulla! Maiores et perferendis eaque,
+                exercitationem praesentium nihil.
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #photography
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #travel
+              </span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+                #winter
+              </span>
+            </div>
+          </div>
+        </SwiperSlide>
+         <SwiperSlide>
+        
+        <div className="max-w-sm rounded overflow-hidden shadow-lg ml-10 mr-10 mt-5">
+        <img src={logo} width="100" height="50" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #photography
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #travel
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #winter
+            </span>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src={logo} width="100" height="50" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #photography
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #travel
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #winter
+            </span>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src={logo} width="100" height="50" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #photography
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #travel
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #winter
+            </span>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        
+        <div className="max-w-sm rounded overflow-hidden shadow-lg">
+        <img src={logo} width="100" height="50" />
+          <div className="px-6 py-4">
+            <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
+            <p className="text-gray-700 text-base">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatibus quia, nulla! Maiores et perferendis eaque,
+              exercitationem praesentium nihil.
+            </p>
+          </div>
+          <div className="px-6 pt-4 pb-2">
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #photography
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #travel
+            </span>
+            <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+              #winter
+            </span>
+          </div>
+        </div>
+      </SwiperSlide>
+    
+        
       </Swiper>
     </>
   );

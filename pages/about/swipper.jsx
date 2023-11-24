@@ -22,7 +22,7 @@ const SwiperComponent = () => {
         }}
         navigation={true}
       >
-        <SwiperSlide className="">
+        <SwiperSlide >
         
           <div className="max-w-sm rounded overflow-hidden shadow-lg ml-10 mr-10 mt-5">
           <img src={logo} width="100" height="50" />
